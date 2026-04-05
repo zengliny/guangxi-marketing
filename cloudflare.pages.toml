@@ -1,0 +1,14 @@
+# Cloudflare Pages Configuration
+# https://developers.cloudflare.com/pages/framework-guides/astro/
+
+[build]
+command = "npm run build"
+cwd = "."
+
+[build.environment]
+NODE_VERSION = "20"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
