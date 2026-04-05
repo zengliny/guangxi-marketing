@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="广西旅游营销引流页 - 专业房产金融服务">
+  <!-- Hero 区域 -->
+  <section class="bg-gradient-to-r from-primary to-accent text-white py-20 md:py-32">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        广西专业房产金融服务
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        一站式解决您的公积金贷款、房产抵押、房屋交易、民宿运营需求
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="#services" class="btn-secondary text-lg px-8">
+          查看服务
+        </a>
+        <a href="/ziyuan" class="bg-white text-primary hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-300">
+          免费学习资料
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务展示区 -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">专业服务 精准解决</h2>
+      <p class="section-subtitle text-center mx-auto">
+        8大核心服务，覆盖房产金融全链条
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 服务卡片 -->
+        <a href="/gjj-daikuan" class="card group">
+          <div class="text-accent text-4xl mb-4">💰</div>
+          <h3 class="text-xl font-bold text-primary mb-2">公积金贷款</h3>
+          <p class="text-gray-600">最高额度，最低利率，快速审批</p>
+        </a>
+        
+        <a href="/gjj-fapfang" class="card group">
+          <div class="text-accent text-4xl mb-4">🏛️</div>
+          <h3 class="text-xl font-bold text-primary mb-2">公积金法拍房</h3>
+          <p class="text-gray-600">法拍房公积金贷款专项服务</p>
+        </a>
+        
+        <a href="/gjj-tixian" class="card group">
+          <div class="text-accent text-4xl mb-4">💳</div>
+          <h3 class="text-xl font-bold text-primary mb-2">公积金提现</h3>
+          <p class="text-gray-600">合规提取，流程透明，快速到账</p>
+        </a>
+        
+        <a href="/fang-chan-diya" class="card group">
+          <div class="text-accent text-4xl mb-4">🏠</div>
+          <h3 class="text-xl font-bold text-primary mb-2">房产抵押</h3>
+          <p class="text-gray-600">房屋抵押贷款，资金周转无忧</p>
+        </a>
+        
+        <a href="/fang-quankuan" class="card group">
+          <div class="text-accent text-4xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold text-primary mb-2">房屋全款收购</h3>
+          <p class="text-gray-600">快速全款收购，现金交易安全</p>
+        </a>
+        
+        <a href="/fang-tuoguan" class="card group">
+          <div class="text-accent text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-bold text-primary mb-2">房屋托管</h3>
+          <p class="text-gray-600">专业托管服务，租金收益稳定</p>
+        </a>
+        
+        <a href="/fang-chuzu" class="card group">
+          <div class="text-accent text-4xl mb-4">🔑</div>
+          <h3 class="text-xl font-bold text-primary mb-2">房屋出租</h3>
+          <p class="text-gray-600">精品房源出租，租客精准匹配</p>
+        </a>
+        
+        <a href="/haijing-minsu" class="card group">
+          <div class="text-accent text-4xl mb-4">🌊</div>
+          <h3 class="text-xl font-bold text-primary mb-2">海景民宿</h3>
+          <p class="text-gray-600">涠洲岛/防城港海景民宿运营</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 学习资料区 -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">免费学习资料</h2>
+      <p class="section-subtitle text-center mx-auto">
+        定期更新房产金融知识，助您投资决策
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="card">
+          <h3 class="text-xl font-bold text-primary mb-3">公积金贷款完全指南</h3>
+          <p class="text-gray-600 mb-4">从申请到放款全流程详解</p>
+          <a href="/downloads/gjj-daikuan-guide.pdf" class="text-accent font-semibold hover:underline">下载PDF →</a>
+        </div>
+        
+        <div class="card">
+          <h3 class="text-xl font-bold text-primary mb-3">购房避坑攻略</h3>
+          <p class="text-gray-600 mb-4">避免购房陷阱的实用技巧</p>
+          <a href="/downloads/house-buying-guide.pdf" class="text-accent font-semibold hover:underline">下载PDF →</a>
+        </div>
+        
+        <div class="card">
+          <h3 class="text-xl font-bold text-primary mb-3">民宿运营实战手册</h3>
+          <p class="text-gray-600 mb-4">海景民宿运营全流程指南</p>
+          <a href="/downloads/minsu-operation.pdf" class="text-accent font-semibold hover:underline">下载PDF →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA 区域 -->
+  <section class="bg-primary text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">立即咨询专业顾问</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        30分钟免费咨询，为您量身定制解决方案
+      </p>
+      <a href="tel:13888888888" class="btn-secondary text-lg px-10">
+        📞 138-8888-8888
+      </a>
+    </div>
+  </section>
+</Layout>
