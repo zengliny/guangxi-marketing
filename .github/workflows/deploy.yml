@@ -10,9 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,24 +31,16 @@ jobs:
         with:
           name: dist
           path: dist
+          retention-days: 7
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    steps:
-      - name: Download build artifact
+      - name: Download and list files
         uses: actions/download-artifact@v4
         with:
           name: dist
-          path: dist
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: guangxi-marketing
-          directory: dist
+      - name: List build output
+        run: |
+          echo "=== Build output files ==="
+          ls -la
+          echo "=== index.html exists? ==="
+          test -f index.html && echo "YES" || echo "NO"
